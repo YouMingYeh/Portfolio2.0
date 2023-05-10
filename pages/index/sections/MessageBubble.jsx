@@ -131,8 +131,9 @@ const MessengerAnimation = ({ messages, handleClick }) => {
   }, [pointing]);
   return (
     <div
-      className="p-4 h-full relative rounded-lg w-screen justify-end flex-col bottom-0 absolute transition-all"
+      className="p-8 pb-32 h-full relative rounded-lg w-screen justify-end flex-col bottom-0 absolute transition-all"
       ref={containerRef}
+      style={{transform: 'perspective(800px) rotateY(3deg) rotateX(1deg)'}}
     >
       {messages.map((m, i) => {
         if (i == messages.length - 1) {

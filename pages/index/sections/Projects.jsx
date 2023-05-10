@@ -17,7 +17,13 @@ export default function Projects({ currentIndex }) {
       tl.set(".installing", { text: "" });
       tl.set(".done", { text: "" });
 
-      tl.fromTo(
+      tl
+      .to('.mockup-code',{
+        duration: 0.8,
+        rotateY: 15,
+        rotateX: 7
+      })
+      .fromTo(
         ".command",
         {
           duration: 0,
@@ -72,7 +78,7 @@ export default function Projects({ currentIndex }) {
       {popped ? (
         <ProjectsTabs />
       ) : (
-        <div className="mockup-code w-1/3 max-h-full h-fit self-center">
+        <div className="mockup-code w-1/3 max-h-full h-fit self-center shadow-md shadow-black" style={{transform: 'perspective(800px)'}}>
           <pre data-prefix="$">
             <code className="command"></code>
           </pre>
