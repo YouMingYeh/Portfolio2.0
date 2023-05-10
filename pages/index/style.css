@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body, html {
+    @apply font-mono ordinal slashed-zero tabular-nums antialiased hover:subpixel-antialiased
+  }
+}
+
+
+
+@layer components {
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+} 
+
+.scrollbar-hide {
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+}
+  .scroll-container {
+    @apply h-screen  snap-y snap-mandatory overflow-scroll scrollbar-hide scroll-smooth 
+  }
+  .section {
+    @apply h-screen snap-start w-screen my-96
+  }
+    
+}
+
+
