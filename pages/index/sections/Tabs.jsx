@@ -57,6 +57,7 @@ export default function ProjectsTabs() {
       className="mockup-window bg-base-300 self-center w-4/5 h-[80vh] transform  scale-0 border border-base-content border-opacity-25 opacity-90 overflow-hidden relative shadow-black shadow-lg"
       style={{ transformStyle: "preserve-3d", transform: 'perspective(600px)' }}
     >
+      <span className="absolute top-0 left-0 translate-x-[45%] translate-y-1/2 w-full font-bold font-serif text-2xl">My WORKS/></span>
       <Tabs active={active} setActive={setActive} setPointing={setPointing} />
       <Content
         active={active}
