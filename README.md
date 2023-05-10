@@ -1,4 +1,4 @@
-# Linker
-# Linker
-# Portfolio2.0
-# Portfolio2.0
+# Portfolio
+
+use:
+gsap, react-animated-cursor
