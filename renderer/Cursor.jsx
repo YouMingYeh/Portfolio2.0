@@ -1,5 +1,6 @@
 import React from 'react';
 import AnimatedCursor from "react-animated-cursor";
+import './cursor.css'
 
 function Cursor() {
   return (
@@ -16,7 +17,8 @@ function Cursor() {
         }}
         outerStyle={{
           backgroundColor: "#ffffff",
-          mixBlendMode: 'exclusion'
+          mixBlendMode: 'exclusion',
+          animation: "blobRadius 3s ease infinite, blobBackground 15s ease infinite"
         }}
         trailingSpeed={4}
       />
