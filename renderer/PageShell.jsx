@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./style.css";
 import { PageContextProvider } from "./usePageContext";  
-import { DndProvider } from 'react-dnd';
-import { HTML5Backend } from 'react-dnd-html5-backend';
 
 export { PageShell };
 
@@ -20,12 +18,10 @@ function PageShell({ pageContext, children }) {
   return (
     <React.Suspense fallback={<Loading />}>
 
-    <DndProvider backend={HTML5Backend}>
       <PageContextProvider pageContext={pageContext}>
         <Cursor />
         {children}
       </PageContextProvider>
-      </DndProvider >
     </React.Suspense>
   );
 }
