@@ -40,24 +40,24 @@ export default function ProjectsTabs() {
     const { clientX, clientY } = event;
     const centerX = window.innerWidth / 2;
     const centerY = window.innerHeight / 2;
-    const rotateY = -(clientY - centerY) * 0.03;
-    const rotateX = (clientX - centerX) * 0.03;
+    const rotateY = -(clientY - centerY) * 0.02;
+    const rotateX = (clientX - centerX) * 0.015;
     gsap.to(".mockup-window", {
       duration: 0.8,
       ease: "power4.out",
-      rotateY: rotateY,
-      rotateX: rotateX,
-      translateY: rotateY,
-      translateX: rotateX
+      rotateY: rotateX,
+      rotateX: rotateY,
+      // translateY: rotateY,
+      // translateX: rotateX,
     });
   }
 
   return (
     <div
       className="mockup-window bg-base-300 self-center w-4/5 h-[80vh] transform  scale-0 border border-base-content border-opacity-25 opacity-90 overflow-hidden relative shadow-black shadow-lg"
-      style={{ transformStyle: "preserve-3d" }}
+      style={{ transformStyle: "preserve-3d", transform: 'perspective(600px)' }}
     >
-      <Tabs active={active} setActive={setActive} setPointing={setPointing}/>
+      <Tabs active={active} setActive={setActive} setPointing={setPointing} />
       <Content
         active={active}
         setActive={setActive}
@@ -78,9 +78,7 @@ function Content({ active, setActive, pointing, setPointing }) {
           if (isHovered === index || pointing === index) {
             return (
               <a
-                className={
-                  "flex items-center h-[15vh] opacity-100 font-bold"
-                }
+                className={"flex items-center h-[15vh] opacity-100 font-bold"}
                 key={data.title + index}
                 onClick={() => {
                   setPointing(index);
@@ -124,7 +122,6 @@ function Content({ active, setActive, pointing, setPointing }) {
                 <div className="text-xl whitespace-nowrap">{data.title}</div>
                 <div className="text-lg">{data.time}</div>
               </div>
-              
             </a>
           );
         })}
@@ -172,11 +169,7 @@ function Content({ active, setActive, pointing, setPointing }) {
         </div>
         <div className="flex w-full justify-center flex-wrap">
           {tabs[active].content[pointing].tools.map((item) => {
-            return (
-              <div className="badge badge-outline m-2">
-                {item}
-              </div>
-            );
+            return <div className="badge badge-outline m-2">{item}</div>;
           })}
         </div>
       </div>
@@ -203,7 +196,7 @@ function Tabs({ active, setActive, setPointing }) {
             key={`${tab.name}`}
             className="tab tab-bordered text-xl tab-lifted"
             onClick={() => {
-            setPointing(0);
+              setPointing(0);
               setActive(index);
             }}
           >
@@ -243,12 +236,7 @@ const tabs = [
         deploy: "https://pdaowebsite.gatsbyjs.io/",
         description:
           "PDAO 2023 promotional website and scoreboard, practicing parallax scrolling UI",
-        tools: [
-          "React",
-          "Astro",
-          "Node.js",
-          "RESTful API"
-        ],
+        tools: ["React", "Astro", "Node.js", "RESTful API"],
       },
       {
         title: "Tech Blog Platform",
@@ -274,7 +262,7 @@ const tabs = [
           "Express",
           "OAuth",
           "styled-components",
-          "RESTful API"
+          "RESTful API",
         ],
       },
       {
@@ -305,55 +293,52 @@ const tabs = [
         title: "dynamic-css-import",
         time: "2023",
         repo: "https://github.com/YouMingYeh/dynamic-css-import",
-        description: "A npm package that support dynamically importing css file by modifying the document head directly",
-        tools: ["npm package", "css-loader"]
+        description:
+          "A npm package that support dynamically importing css file by modifying the document head directly",
+        tools: ["npm package", "css-loader"],
       },
       {
         title: "Personal Website 1.0",
         time: "2023",
         repo: "https://github.com/YouMingYeh/Portfolio",
         deploy: "https://yehyouming.web.app/",
-        description:
-          "My personal website 1.0",
-        tools: [
-          "React",
-          "UI/UX"
-        ],
+        description: "My personal website 1.0",
+        tools: ["React", "UI/UX"],
       },
     ],
   },
   {
     name: "<Course Works/>",
     content: [
-        {
-            title: "real time chat room",
-            time: "2022",
-            repo: "https://github.com/YouMingYeh/myChatRoom",
-            description: "A real time chat room built with web-socket",
-            tools: ["websocket", "mongoose"]
-        },
-        {
-            title: "Wordle",
-            time: "2022",
-            repo: "https://github.com/YouMingYeh/Wordle",
-            description: "Wordle game !",
-            tools: ['game']
-        },
-        {
-            title: "Mine Sweeper",
-            time: "2022",
-            repo: "https://github.com/YouMingYeh/Mine-Sweeper",
-            deploy: "closet-9d7aa.web.app/",
-            description: "Mine Sweeper game !",
-            tools: ['game']
-        },
-        {
-            title: "wp1111",
-            time: "2022",
-            repo: "https://github.com/YouMingYeh/wp1111",
-            description: "All the other works are here!",
-            tools: ['web programming course']
-        }
+      {
+        title: "real time chat room",
+        time: "2022",
+        repo: "https://github.com/YouMingYeh/myChatRoom",
+        description: "A real time chat room built with web-socket",
+        tools: ["websocket", "mongoose"],
+      },
+      {
+        title: "Wordle",
+        time: "2022",
+        repo: "https://github.com/YouMingYeh/Wordle",
+        description: "Wordle game !",
+        tools: ["game"],
+      },
+      {
+        title: "Mine Sweeper",
+        time: "2022",
+        repo: "https://github.com/YouMingYeh/Mine-Sweeper",
+        deploy: "closet-9d7aa.web.app/",
+        description: "Mine Sweeper game !",
+        tools: ["game"],
+      },
+      {
+        title: "wp1111",
+        time: "2022",
+        repo: "https://github.com/YouMingYeh/wp1111",
+        description: "All the other works are here!",
+        tools: ["web programming course"],
+      },
     ],
   },
 ];

@@ -3,8 +3,8 @@
 @import "tailwindcss/utilities";
 
 @layer base {
-  body, html {
-    @apply font-mono
+  body,
+  html {
+    @apply font-mono;
   }
 }
-

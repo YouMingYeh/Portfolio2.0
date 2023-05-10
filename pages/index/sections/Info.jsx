@@ -7,7 +7,7 @@ import {
   AiFillInstagram,
 } from "react-icons/ai/index.js";
 import { SiMedium } from "react-icons/si/index.js";
-import './card.css'
+import "./card.css";
 
 export default function Info() {
   const [isFlipped, setIsFlipped] = useState(false);
@@ -55,21 +55,21 @@ export default function Info() {
     const { clientX, clientY } = event;
     const centerX = window.innerWidth / 2;
     const centerY = window.innerHeight / 2;
-    const rotateY = -(clientY - centerY) * 0.03;
-    const rotateX = (clientX - centerX) * 0.03;
+    const rotateY = -(clientY - centerY) * 0.02;
+    const rotateX = (clientX - centerX) * 0.015;
     gsap.to(".hero", {
       duration: 0.8,
       ease: "power4.out",
-      rotateY: rotateY,
-      rotateX: rotateX,
-      translateY: rotateY,
-      translateX: rotateX
+      rotateY: rotateX,
+      rotateX: rotateY,
+      // translateY: rotateY,
+      // translateX: rotateX,
     });
   }
   return (
     <div
       className="hero min-h-screen bg-none "
-      style={{ transformStyle: "preserve-3d" }}
+      style={{ transformStyle: "preserve-3d", transform: 'perspective(600px)' }}
     >
       <div className="hero-content items-start shadow-2xl rounded-2xl">
         <div className="flip-card">
@@ -79,8 +79,8 @@ export default function Info() {
                 src={backgroundImage}
                 alt="Avatar"
                 className="rounded-2xl object-cover"
-                />
-                <h1>( hover me ! )</h1>
+              />
+              <h1>( hover me ! )</h1>
             </div>
             <div className="flip-card-back text-neutral bg-base-200 w-full h-full rounded-2xl p-8">
               <h1 className="font-bold font-serif text-4xl">Limbo</h1>
@@ -108,10 +108,12 @@ export default function Info() {
             <span className="font-bold">2021 - present </span>
             <h1>
               <span>&nbsp;&nbsp;</span>
-              Major in Information Management, 
+              Major in Information Management,
             </h1>
-            <h1><span>&nbsp;&nbsp;</span>National Taiwan
-              University（國立臺灣大學 資訊管理學系）</h1>
+            <h1>
+              <span>&nbsp;&nbsp;</span>National Taiwan University（國立臺灣大學
+              資訊管理學系）
+            </h1>
           </p>
 
           <h1 className="text-2xl font-bold underline py-3 font-serif">My ❣</h1>
@@ -125,7 +127,10 @@ export default function Info() {
           </h1>
           <p className="py-1 flex">
             <AiFillGithub />
-            <a href="https://github.com/YouMingYeh" className="link after:content-['_↗']">
+            <a
+              href="https://github.com/YouMingYeh"
+              className="link after:content-['_↗']"
+            >
               GitHub
             </a>
           </p>
@@ -140,14 +145,20 @@ export default function Info() {
           </p>
           <p className="py-1 flex">
             <AiFillInstagram />
-            <a href="https://www.instagram.com/yymin_16/" className="link after:content-['_↗']">
+            <a
+              href="https://www.instagram.com/yymin_16/"
+              className="link after:content-['_↗']"
+            >
               Instagram
             </a>
           </p>
 
           <p className="py-1 flex">
             <SiMedium />
-            <a href="https://medium.com/@ym911216" className="link after:content-['_↗']">
+            <a
+              href="https://medium.com/@ym911216"
+              className="link after:content-['_↗']"
+            >
               Blog
             </a>
           </p>

@@ -6,7 +6,7 @@ import Breadcrumbs from "./BreadCrumbs";
 import Section1 from "./sections/About";
 import Projects from "./sections/Projects";
 import Info from "./sections/Info";
-import Contact from "./sections/Contact"
+import Contact from "./sections/Contact";
 import Avatar from "./Avatar";
 
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin, TextPlugin);

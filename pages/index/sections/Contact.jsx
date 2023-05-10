@@ -1,6 +1,6 @@
 import React from "react";
 import { useForm } from "@formspree/react";
-import {gsap} from 'gsap'
+import { gsap } from "gsap";
 const Contact = () => {
   const [state, submit] = useForm("mnqygzeg");
   const { succeeded, submitting } = state;
@@ -23,7 +23,7 @@ const Contact = () => {
     );
 
     // Add mousemove event listener
-    const skewContainer = document.querySelector(".contact");
+    const skewContainer = document.querySelector("#contact");
     skewContainer.addEventListener("mousemove", skewAnimation);
 
     return () => {
@@ -37,20 +37,24 @@ const Contact = () => {
     const { clientX, clientY } = event;
     const centerX = window.innerWidth / 2;
     const centerY = window.innerHeight / 2;
-    const rotateY = -(clientY - centerY) * 0.05;
-    const rotateX = (clientX - centerX) * 0.05;
-    gsap.to(".contact", {
+    const rotateY = -(clientY - centerY) * 0.02;
+    const rotateX = (clientX - centerX) * 0.015;
+    gsap.to("#contact", {
       duration: 0.8,
       ease: "power4.out",
-      rotateY: rotateY,
-      rotateX: rotateX,
-      translateY: rotateY,
-      translateX: rotateX
+      rotateY: rotateX,
+      rotateX: rotateY,
+      // translateY: rotateY,
+      // translateX: rotateX,
     });
   }
 
   return (
-    <div className="flex flex-col items-center mt-20 h-full justify-center font-serif " id="contact" style={{ transformStyle: "preserve-3d" }}>
+    <div
+      className="flex flex-col items-center mt-20 h-full justify-center font-serif "
+      id="contact"
+      style={{ transformStyle: "preserve-3d", transform: 'perspective(600px)' }}
+    >
       <h2 className="text-4xl font-bold ">Contact Me🤙</h2>
       <div className="w-full max-w-lg contact shadow-lg shadow-black">
         {submitting ? (

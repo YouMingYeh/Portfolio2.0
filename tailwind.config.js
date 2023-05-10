@@ -19,8 +19,6 @@ export default {
     },
   },
   daisyui: {
-    themes: [
-      "emerald",
-    ],
+    themes: ["emerald"],
   },
 };
