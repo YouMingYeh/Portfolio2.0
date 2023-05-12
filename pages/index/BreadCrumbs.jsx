@@ -43,11 +43,11 @@ const Breadcrumbs = ({ currentIndex, sectionRefs, matches }) => {
   }, [currentIndex]);
   return (
     <div
-      className={`fixed top-0 right-0 h-full flex flex-col items-center px-2 py-4 z-20 opacity-50 hover:opacity-90 transition-all font-serif ${
-        matches ? "justify-center" : "justify-end"
+      className={`fixed right-0 flex flex-col items-center px-2 py-4 opacity-50 z-20 hover:opacity-90 transition-all font-serif ${
+        matches ? "justify-center bottom-[40%]" : "justify-end bottom-0"
       }`}
     >
-      <nav className="flex flex-col space-y-2 text-2xl font-bold w-48">
+      <nav className="flex flex-col space-y-2 text-2xl font-bold w-48 z-20">
         <div className="flex justify-center w-full">
           <button
             disabled={currentIndex === 0}
