@@ -6,7 +6,7 @@ const MobileContact = () => {
   const { succeeded, submitting } = state;
 
   return (
-    <div className="flex flex-col items-center mt-20 h-full justify-center font-serif">
+    <div className="flex flex-col items-center mt-20 h-full justify-center font-serif px-3">
       <h2 className="text-4xl font-bold ">Contact Me🤙</h2>
       <div className="w-full max-w-lg contact border shadow-lg">
         {submitting ? (
