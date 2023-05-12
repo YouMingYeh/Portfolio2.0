@@ -32,8 +32,8 @@ function Page() {
     const container = document.getElementsByClassName("scroll-container")[0];
     container.addEventListener("scroll", (event) => {
       // const position = container.scrollTop
-
       for (let i = sectionRefs.length - 1; i >= 0; i--) {
+        console.log(sectionRefs)
         if (!sectionRefs[i]) return;
         const rect = sectionRefs[i].current.getBoundingClientRect();
         if (!rect) return;
@@ -55,6 +55,7 @@ function Page() {
           <Breadcrumbs
             currentIndex={currentIndex}
             sectionRefs={sectionRefs}
+            matches = {matches}
           ></Breadcrumbs>
           <section sectionRefs={sectionRefs[0]}>
             <Section1 sectionRefs={sectionRefs}></Section1>
@@ -76,8 +77,9 @@ function Page() {
           <Breadcrumbs
             currentIndex={currentIndex}
             sectionRefs={sectionRefs}
+            matches = {matches}
           ></Breadcrumbs>
-          <section className="section" sectionRefs={sectionRefs[0]}>
+          <section ref={sectionRefs[0]} className="section" >
             <div className="flex justify-start px-6 py-32 flex-col">
               <h1 className="text-2xl font-bold">Hi there!</h1>
               <br></br>

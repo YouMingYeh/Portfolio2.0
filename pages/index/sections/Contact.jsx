@@ -37,8 +37,8 @@ const Contact = () => {
     const { clientX, clientY } = event;
     const centerX = window.innerWidth / 2;
     const centerY = window.innerHeight / 2;
-    const rotateY = -(clientY - centerY) * 0.02;
-    const rotateX = (clientX - centerX) * 0.015;
+    const rotateY = -(clientY - centerY) * 0.015;
+    const rotateX = (clientX - centerX) * 0.008;
     gsap.to("#contact", {
       duration: 0.8,
       ease: "power4.out",

@@ -55,8 +55,8 @@ export default function Info() {
     const { clientX, clientY } = event;
     const centerX = window.innerWidth / 2;
     const centerY = window.innerHeight / 2;
-    const rotateY = -(clientY - centerY) * 0.02;
-    const rotateX = (clientX - centerX) * 0.015;
+    const rotateY = -(clientY - centerY) * 0.015;
+    const rotateX = (clientX - centerX) * 0.008;
     gsap.to(".hero", {
       duration: 0.8,
       ease: "power4.out",
@@ -69,7 +69,7 @@ export default function Info() {
   return (
     <div
       className="hero min-h-screen bg-none "
-      style={{ transformStyle: "preserve-3d", transform: "perspective(600px)" }}
+      style={{ transformStyle: "preserve-3d", transform: "perspective(800px)" }}
     >
       <div className="hero-content items-start shadow-2xl rounded-2xl ">
         <div className="flip-card">

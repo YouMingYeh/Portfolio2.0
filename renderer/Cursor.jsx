@@ -9,7 +9,7 @@ function Cursor() {
       outerSize={40}
       outerAlpha={0.2}
       innerScale={0}
-      outerScale={3}
+      outerScale={2}
       innerStyle={{
         backgroundColor: "white",
         mixBlendMode: "exclusion",
