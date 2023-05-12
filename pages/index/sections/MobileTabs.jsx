@@ -4,8 +4,8 @@ const MobileTabs = () => {
   const [activeTab, setActiveTab] = React.useState(0);
 
   return (
-    <div className=" py-32 h-full z-40 ">
-      <div className="max-w-lg mx-auto h-full">
+    <div className=" py-20 h-full z-40">
+      <div className="max-w-lg mx-auto h-full pb-16">
         <div className="rounded-lg  bg-white h-full">
           <div className="flex justify-center w-full font-bold text-4xl font-serif">
             My Works/>

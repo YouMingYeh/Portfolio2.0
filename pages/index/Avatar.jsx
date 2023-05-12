@@ -26,7 +26,7 @@ const Avatar = () => {
   return (
     <div className="fixed top-0 right-0 z-30">
       <div
-        className="w-32 h-32 rounded-full overflow-hidden cursor-pointer avatar m-3"
+        className="w-28 h-28 rounded-full overflow-hidden cursor-pointer avatar m-3"
         onMouseEnter={() => showName()}
         onMouseLeave={() => hideName()}
       >
@@ -34,7 +34,7 @@ const Avatar = () => {
       </div>
       <div
         className="info absolute top-0 font-serif
-  text-3xl w-fit whitespace-nowrap -translate-x-16 translate-y-16"
+  text-3xl w-fit whitespace-nowrap -translate-x-16 translate-y-12"
       ></div>
     </div>
   );

@@ -14,11 +14,11 @@ export default function MobileInfo() {
   };
 
   return (
-    <div className="py-32 px-3 h-full">
+    <div className="py-20 px-3 h-full">
         <span className="flex justify-center w-full font-bold text-4xl font-serif">
           My Info/>
         </span>
-      <div className="p-3 shadow-lg rounded h-full overflow-scroll scrollbar-hide">
+      <div className="px-3 shadow-lg rounded h-full overflow-scroll scrollbar-hide">
         <h1 className="text-2xl font-bold underline font-serif">Bio</h1>
         <p className="py-1">
           <span className="font-bold">2002 </span>
