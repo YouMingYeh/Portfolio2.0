@@ -21,6 +21,6 @@
     @apply h-screen  snap-y snap-mandatory overflow-scroll scrollbar-hide scroll-smooth;
   }
   .section {
-    @apply h-screen snap-start w-screen my-96;
+    @apply h-screen snap-start w-screen;
   }
 }
