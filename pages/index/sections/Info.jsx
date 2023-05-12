@@ -69,10 +69,9 @@ export default function Info() {
   return (
     <div
       className="hero min-h-screen bg-none "
-      style={{ transformStyle: "preserve-3d", transform: 'perspective(600px)' }}
+      style={{ transformStyle: "preserve-3d", transform: "perspective(600px)" }}
     >
       <div className="hero-content items-start shadow-2xl rounded-2xl ">
-      
         <div className="flip-card">
           <div className="flip-card-inner ">
             <div className="flip-card-front">
@@ -96,7 +95,9 @@ export default function Info() {
           </div>
         </div>
         <div className="p-3">
-        <span className="flex justify-center w-full font-bold text-2xl font-serif" >My Info/></span>
+          <span className="flex justify-center w-full font-bold text-2xl font-serif">
+            My Info/>
+          </span>
           <h1 className="text-2xl font-bold underline font-serif">Bio</h1>
           <p className="py-1">
             <span className="font-bold">2002 </span>
