@@ -4,13 +4,13 @@ const MobileTabs = () => {
   const [activeTab, setActiveTab] = React.useState(0);
 
   return (
-    <div className=" py-32 overflow-scroll h-full z-40 scrollbar-hide">
-      <div className="max-w-lg mx-auto">
-        <div className="rounded-lg shadow-lg bg-white">
-          <div className="flex justify-center w-full font-bold text-4xl">
+    <div className=" py-32 h-full z-40 ">
+      <div className="max-w-lg mx-auto h-full">
+        <div className="rounded-lg  bg-white h-full">
+          <div className="flex justify-center w-full font-bold text-4xl font-serif">
             My Works/>
           </div>
-          <div className="p-4 ">
+          <div className="p-4 h-full">
             <div className="flex flex-row justify-around items-center mb-4">
               {tabs.map((tab, index) => (
                 <button
@@ -26,11 +26,11 @@ const MobileTabs = () => {
                 </button>
               ))}
             </div>
-            <div>
+            <div className="h-full overflow-scroll scrollbar-hide shadow-lg p-3 border rounded ">
               {tabs[activeTab].content.map((content, index) => (
                 <div
                   key={index}
-                  className="mb-4 border rounded-lg shadow-sm bg-white p-4"
+                  className="mb-4 border rounded-lg shadow-md bg-white p-4"
                 >
                   <h3 className="text-md font-medium text-gray-800">
                     {content.title}

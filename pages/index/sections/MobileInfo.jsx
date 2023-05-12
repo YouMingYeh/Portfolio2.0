@@ -16,7 +16,7 @@ export default function MobileInfo() {
   return (
     <div className="py-12 px-8">
       <div className="p-3 shadow-lg rounded">
-        <span className="flex justify-center w-full font-bold text-2xl font-serif">
+        <span className="flex justify-center w-full font-bold text-4xl font-serif">
           My Info/>
         </span>
         <h1 className="text-2xl font-bold underline font-serif">Bio</h1>
