@@ -96,7 +96,7 @@ export default function MobileInfo() {
             className="btn self-center btn-xl btn-outline w-fit rotate-2 hover:rotate-6 hover:scale-125"
             onClick={downloadResume}
           >
-            <span className="font-extrabold text-2xl font-serif">
+            <span className="font-extrabold text-xl font-serif ">
               Download my Resume
             </span>
           </button>
