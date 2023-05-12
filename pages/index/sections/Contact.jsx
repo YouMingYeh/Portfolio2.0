@@ -53,10 +53,10 @@ const Contact = () => {
     <div
       className="flex flex-col items-center mt-20 h-full justify-center font-serif "
       id="contact"
-      style={{ transformStyle: "preserve-3d", transform: 'perspective(600px)' }}
+      style={{ transformStyle: "preserve-3d", transform: "perspective(600px)" }}
     >
       <h2 className="text-4xl font-bold ">Contact Me🤙</h2>
-      <div className="w-full max-w-lg contact shadow-lg shadow-black">
+      <div className="w-full max-w-lg contact shadow-lg shadow-black rounded">
         {submitting ? (
           <button
             disabled
