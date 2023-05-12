@@ -13,9 +13,7 @@ function getWhere(index) {
 gsap.registerPlugin(ScrollToPlugin);
 
 const Breadcrumbs = ({ currentIndex, sectionRefs, matches }) => {
-  // console.log(currentIndex)
   const handleClick = (direction) => {
-    console.log(direction);
     const nextIndex = direction === "up" ? currentIndex - 1 : currentIndex + 1;
 
     if (nextIndex < 0 || nextIndex >= sectionRefs.length) {
@@ -29,8 +27,6 @@ const Breadcrumbs = ({ currentIndex, sectionRefs, matches }) => {
   };
 
   useEffect(() => {
-    console.log(getWhere(currentIndex));
-
     const tl = gsap.timeline({ paused: true });
 
     tl.to(".where", {
@@ -46,7 +42,11 @@ const Breadcrumbs = ({ currentIndex, sectionRefs, matches }) => {
     tl.play();
   }, [currentIndex]);
   return (
-    <div className={`fixed top-0 right-0 h-full flex flex-col items-center px-2 py-4 z-20 opacity-50 hover:opacity-90 transition-all font-serif ${matches ? "justify-center" :"justify-end"}`}>
+    <div
+      className={`fixed top-0 right-0 h-full flex flex-col items-center px-2 py-4 z-20 opacity-50 hover:opacity-90 transition-all font-serif ${
+        matches ? "justify-center" : "justify-end"
+      }`}
+    >
       <nav className="flex flex-col space-y-2 text-2xl font-bold w-48">
         <div className="flex justify-center w-full">
           <button

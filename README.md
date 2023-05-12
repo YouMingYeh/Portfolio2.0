@@ -2,4 +2,3 @@
 
 use:
 gsap, react-animated-cursor
-

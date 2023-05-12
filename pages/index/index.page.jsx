@@ -8,7 +8,8 @@ import Projects from "./sections/Projects";
 import Info from "./sections/Info";
 import Contact from "./sections/Contact";
 import Avatar from "./Avatar";
-import MobileTabs from "./sections/MobileTabs";import MobileInfo from "./sections/MobileInfo";
+import MobileTabs from "./sections/MobileTabs";
+import MobileInfo from "./sections/MobileInfo";
 import MobileContact from "./sections/MobileContact";
 
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin, TextPlugin);
@@ -33,13 +34,11 @@ function Page() {
     container.addEventListener("scroll", (event) => {
       // const position = container.scrollTop
       for (let i = sectionRefs.length - 1; i >= 0; i--) {
-        console.log(sectionRefs)
         if (!sectionRefs[i]) return;
         const rect = sectionRefs[i].current.getBoundingClientRect();
         if (!rect) return;
 
         if (rect.x == 0 && rect.y == 0) {
-          // console.log(i)
           setCurrentIndex(i);
           return;
         }
@@ -55,7 +54,7 @@ function Page() {
           <Breadcrumbs
             currentIndex={currentIndex}
             sectionRefs={sectionRefs}
-            matches = {matches}
+            matches={matches}
           ></Breadcrumbs>
           <section sectionRefs={sectionRefs[0]}>
             <Section1 sectionRefs={sectionRefs}></Section1>
@@ -77,9 +76,9 @@ function Page() {
           <Breadcrumbs
             currentIndex={currentIndex}
             sectionRefs={sectionRefs}
-            matches = {matches}
+            matches={matches}
           ></Breadcrumbs>
-          <section ref={sectionRefs[0]} className="section" >
+          <section ref={sectionRefs[0]} className="section">
             <div className="flex justify-start px-6 py-32 flex-col">
               <h1 className="text-2xl font-bold">Hi there!</h1>
               <br></br>

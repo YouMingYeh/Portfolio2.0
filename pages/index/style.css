@@ -3,8 +3,9 @@
 @tailwind utilities;
 
 @layer base {
-  body, html {
-    @apply font-mono slashed-zero tabular-nums antialiased hover:subpixel-antialiased
+  body,
+  html {
+    @apply font-mono slashed-zero tabular-nums antialiased hover:subpixel-antialiased;
   }
 }
 
