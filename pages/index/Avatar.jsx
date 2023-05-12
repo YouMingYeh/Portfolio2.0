@@ -7,7 +7,7 @@ const Avatar = () => {
     const tl = gsap.timeline();
     tl.to(".info", {
       duration: 1,
-      translateX: -250,
+      translateX: -180,
       ease: "power4",
       text: "You Ming-Yeh",
     });
@@ -34,7 +34,7 @@ const Avatar = () => {
       </div>
       <div
         className="info absolute top-0 font-serif
-  text-4xl w-fit whitespace-nowrap -translate-x-16 translate-y-16"
+  text-3xl w-fit whitespace-nowrap -translate-x-16 translate-y-16"
       ></div>
     </div>
   );
