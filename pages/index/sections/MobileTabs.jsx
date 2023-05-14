@@ -38,28 +38,30 @@ const MobileTabs = () => {
                   <p className="text-sm font-medium text-gray-500 mb-2">
                     {content.time}
                   </p>
-                  {content.repo && (
-                    <a
-                      href={content.repo}
-                      className="border text-sm font-medium text-neutral mb-2"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Github Repo
-                      <br></br>
-                    </a>
-                  )}
+                  <div className="w-full flex-nowrap flex-row flex gap-1">
+                    {content.repo && (
+                      <a
+                        href={content.repo}
+                        className="border border-gray-500  rounded p-1 text-sm font-medium text-neutral mb-2"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Github Repo
+                        <br></br>
+                      </a>
+                    )}
 
-                  {content.deploy && (
-                    <a
-                      href={content.deploy}
-                      className="border text-sm font-medium text-neutral mb-2"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Deployed App
-                    </a>
-                  )}
+                    {content.deploy && (
+                      <a
+                        href={content.deploy}
+                        className="border border-gray-500 rounded p-1 text-sm font-medium text-neutral mb-2"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Deployed App
+                      </a>
+                    )}
+                  </div>
                   <p className="text-sm font-medium text-gray-500 mb-2">
                     {content.description}
                   </p>
