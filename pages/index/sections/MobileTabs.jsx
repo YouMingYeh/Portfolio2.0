@@ -41,7 +41,7 @@ const MobileTabs = () => {
                   {content.repo && (
                     <a
                       href={content.repo}
-                      className="text-sm font-medium text-neutral mb-2"
+                      className="border text-sm font-medium text-neutral mb-2"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -53,7 +53,7 @@ const MobileTabs = () => {
                   {content.deploy && (
                     <a
                       href={content.deploy}
-                      className="text-sm font-medium text-neutral mb-2"
+                      className="border text-sm font-medium text-neutral mb-2"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
