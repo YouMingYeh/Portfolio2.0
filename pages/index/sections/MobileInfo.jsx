@@ -19,6 +19,16 @@ export default function MobileInfo() {
         My Info/>
       </span>
       <div className="px-3 border shadow-lg rounded h-full overflow-scroll scrollbar-hide">
+      <div className="mt-3 w-full flex justify-center">
+          <button
+            className="btn self-center btn-xl btn-outline w-fit rotate-2 hover:rotate-6 hover:scale-125 h-fit"
+            onClick={downloadResume}
+          >
+            <span className="font-extrabold text-xl font-serif">
+              Download my Resume
+            </span>
+          </button>
+        </div>
         <h1 className="text-2xl font-bold underline font-serif">Bio</h1>
         <p className="py-1">
           <h1 className="font-bold">2002 </h1>
@@ -95,16 +105,7 @@ export default function MobileInfo() {
         <p className="py-1 ">email: b10705052@ntu.edu.tw (frequently used)</p>
         <p className="py-1">gmail: ym911216@gmail.com</p>
         <p className="py-1">phone: +886 0976343024</p>
-        <div className="w-full flex justify-center">
-          <button
-            className="btn self-center btn-xl btn-outline w-fit rotate-2 hover:rotate-6 hover:scale-125 h-fit"
-            onClick={downloadResume}
-          >
-            <span className="font-extrabold text-xl font-serif">
-              Download my Resume
-            </span>
-          </button>
-        </div>
+        
       </div>
     </div>
   );
