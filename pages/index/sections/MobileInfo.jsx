@@ -14,19 +14,23 @@ export default function MobileInfo() {
   };
 
   return (
-    <div className="py-20 px-3 h-full">
-        <span className="flex justify-center w-full font-bold text-4xl font-serif">
-          My Info/>
-        </span>
-      <div className="px-3 shadow-lg rounded h-full overflow-scroll scrollbar-hide">
+    <div className="pt-20 pb-32 px-3 h-full max-w-xl mx-auto">
+      <span className="flex justify-center w-full font-bold text-4xl font-serif">
+        My Info/>
+      </span>
+      <div className="px-3 border shadow-lg rounded h-full overflow-scroll scrollbar-hide">
         <h1 className="text-2xl font-bold underline font-serif">Bio</h1>
         <p className="py-1">
           <span className="font-bold">2002 </span>
           <span>Born in Taoyuan, Taiwan 🇹‍🇼</span>
         </p>
         <p className="py-1">
+          <span className="font-bold">2022 </span>
+          <span>NTUIM Orientation Camp General Coordinator</span>
+        </p>
+        <p className="py-1">
           <span className="font-bold">2023 </span>
-          <span>PDAO 2023 System Management</span>
+          <span>PDAO 2023 System Manager and Problem Creater</span>
         </p>
         <p className="py-1">
           <span className="font-bold">2021 - present </span>
