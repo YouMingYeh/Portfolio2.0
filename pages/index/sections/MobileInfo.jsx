@@ -21,25 +21,25 @@ export default function MobileInfo() {
       <div className="px-3 border shadow-lg rounded h-full overflow-scroll scrollbar-hide">
         <h1 className="text-2xl font-bold underline font-serif">Bio</h1>
         <p className="py-1">
-          <span className="font-bold">2002 </span>
-          <span>Born in Taoyuan, Taiwan 🇹‍🇼</span>
+          <h1 className="font-bold">2002 </h1>
+          <h1>Born in Taoyuan, Taiwan 🇹‍🇼</h1>
+        </p>
+        <p className="">
+          <h1 className="font-bold">2022 </h1>
+          <h1>NTUIM Orientation Camp General Coordinator</h1>
         </p>
         <p className="py-1">
-          <span className="font-bold">2022 </span>
-          <span>NTUIM Orientation Camp General Coordinator</span>
+          <h1 className="font-bold">2023 </h1>
+          <h1>PDAO 2023 System Manager and Problem Creater</h1>
         </p>
         <p className="py-1">
-          <span className="font-bold">2023 </span>
-          <span>PDAO 2023 System Manager and Problem Creater</span>
-        </p>
-        <p className="py-1">
-          <span className="font-bold">2021 - present </span>
+          <h1 className="font-bold">2021 - present </h1>
           <h1>
-            <span>&nbsp;&nbsp;</span>
+          
             Major in Information Management,
           </h1>
           <h1>
-            <span>&nbsp;&nbsp;</span>National Taiwan University（國立臺灣大學
+          National Taiwan University（國立臺灣大學
             資訊管理學系）
           </h1>
         </p>
