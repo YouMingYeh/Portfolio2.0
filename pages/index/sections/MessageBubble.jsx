@@ -11,31 +11,31 @@ const addMessage = async (message, bubble) => {
   tl.fromTo(
     bubble,
     { duration: 0, text: " ", opacity: 0 },
-    { duration: 0.4, text: " ", opacity: 0 }
+    { duration: 0.2, text: " ", opacity: 0 }
   )
     .fromTo(
       bubble,
-      { duration: 0.1, text: ".", opacity: 0 },
-      { duration: 0.15, text: ".", opacity: 1 }
+      { duration: 0.08, text: ".", opacity: 0 },
+      { duration: 0.12, text: ".", opacity: 1 }
     )
     .fromTo(
       bubble,
       { duration: 0, text: ". .", opacity: 1 },
-      { duration: 0.15, text: ". .", opacity: 1 }
+      { duration: 0.12, text: ". .", opacity: 1 }
     )
     .fromTo(
       bubble,
       { duration: 0, text: ". . .", opacity: 1 },
-      { duration: 0.4, text: ". . .", opacity: 1 }
+      { duration: 0.2, text: ". . .", opacity: 1 }
     )
     // .fromTo(
     //   bubble,
-    //   { duration: 0.1, text: " ", opacity: 1 },
+    //   { duration: 0.08, text: " ", opacity: 1 },
     //   { duration: 0, text: " ", opacity: 0 }
     // )
     // .fromTo(
     //   bubble,
-    //   { duration: 0.1, text: ".", opacity: 0 },
+    //   { duration: 0.08, text: ".", opacity: 0 },
     //   { duration: 0.2, text: ".", opacity: 1 }
     // )
     // .fromTo(
@@ -50,23 +50,23 @@ const addMessage = async (message, bubble) => {
     // )
     .fromTo(
       bubble,
-      { duration: 0.1, text: " ", opacity: 1 },
+      { duration: 0.08, text: " ", opacity: 1 },
       { duration: 0, text: " ", opacity: 0 }
     )
     .fromTo(
       bubble,
-      { duration: 0.1, text: ".", opacity: 0 },
-      { duration: 0.15, text: ".", opacity: 1 }
+      { duration: 0.08, text: ".", opacity: 0 },
+      { duration: 0.12, text: ".", opacity: 1 }
     )
     .fromTo(
       bubble,
       { duration: 0, text: ". .", opacity: 1 },
-      { duration: 0.15, text: ". .", opacity: 1 }
+      { duration: 0.12, text: ". .", opacity: 1 }
     )
     .fromTo(
       bubble,
       { duration: 0, text: ". . .", opacity: 1 },
-      { duration: 0.4, text: ". . .", opacity: 1 }
+      { duration: 0.2, text: ". . .", opacity: 1 }
     )
 
     .fromTo(

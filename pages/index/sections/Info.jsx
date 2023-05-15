@@ -104,6 +104,10 @@ export default function Info() {
             <span>Born in Taoyuan, Taiwan 🇹‍🇼</span>
           </p>
           <p className="py-1">
+            <span className="font-bold">2022 </span>
+            <span>NTUIM Orientation Camp General Coordinator</span>
+          </p>
+          <p className="py-1">
             <span className="font-bold">2023 </span>
             <span>PDAO 2023 System Management</span>
           </p>
