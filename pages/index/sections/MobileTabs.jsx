@@ -8,7 +8,7 @@ const MobileTabs = () => {
       <div className="max-w-lg mx-auto h-full pb-16">
         <div className="rounded-lg  bg-white h-full">
           <div className="flex justify-center w-full font-bold text-4xl font-serif">
-            My Works/>
+            My Works
           </div>
           <div className="p-4 h-full">
             <div className="flex flex-row justify-around items-center mb-4">

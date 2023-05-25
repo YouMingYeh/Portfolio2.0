@@ -16,10 +16,10 @@ export default function MobileInfo() {
   return (
     <div className="pt-20 pb-32 px-3 h-full max-w-xl mx-auto">
       <span className="flex justify-center w-full font-bold text-4xl font-serif">
-        My Info/>
+        My Info
       </span>
       <div className="px-3 border shadow-lg rounded h-full overflow-scroll scrollbar-hide">
-      <div className="mt-3 w-full flex justify-center">
+        <div className="mt-3 w-full flex justify-center">
           <button
             className="btn self-center btn-xl btn-outline w-fit rotate-2 hover:rotate-6 hover:scale-125 h-fit"
             onClick={downloadResume}
@@ -44,14 +44,8 @@ export default function MobileInfo() {
         </p>
         <p className="py-1">
           <h1 className="font-bold">2021 - present </h1>
-          <h1>
-          
-            Major in Information Management,
-          </h1>
-          <h1>
-          National Taiwan University（國立臺灣大學
-            資訊管理學系）
-          </h1>
+          <h1>Major in Information Management,</h1>
+          <h1>National Taiwan University（國立臺灣大學 資訊管理學系）</h1>
         </p>
 
         <h1 className="text-2xl font-bold underline py-3 font-serif">My ❣</h1>
@@ -105,7 +99,6 @@ export default function MobileInfo() {
         <p className="py-1 ">email: b10705052@ntu.edu.tw (frequently used)</p>
         <p className="py-1">gmail: ym911216@gmail.com</p>
         <p className="py-1">phone: +886 0976343024</p>
-        
       </div>
     </div>
   );

@@ -96,7 +96,7 @@ export default function Info() {
         </div>
         <div className="p-3">
           <span className="flex justify-center w-full font-bold text-2xl font-serif">
-            My Info/>
+            My Info
           </span>
           <h1 className="text-2xl font-bold underline font-serif">Bio</h1>
           <p className="py-1">
