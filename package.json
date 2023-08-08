@@ -12,6 +12,7 @@
     "@emotion/styled": "^11.10.6",
     "@formspree/react": "^2.4.1",
     "@magne4000/vite-plugin-vercel-ssr": "^0.1.5",
+    "@studio-freight/react-lenis": "^0.0.20",
     "@vitejs/plugin-react": "^3.0.0",
     "compression": "^1.7.4",
     "cross-env": "^7.0.3",
