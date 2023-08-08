@@ -9,7 +9,7 @@ export default function MobileInfo() {
   const downloadResume = () => {
     const link = document.createElement("a");
     link.download = `yehyouming's_resume.pdf`;
-    link.href = "/resume.pdf";
+    link.href = "https://github.com/YouMingYeh/CV/raw/main/CV.pdf";
     link.click();
   };
 
