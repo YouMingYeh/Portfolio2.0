@@ -43,16 +43,24 @@ export default function MobileInfo() {
           <h1>PDAO 2023 System Manager and Problem Creater</h1>
         </p>
         <p className="py-1">
+            <span className="font-bold">2023 </span>
+            <span>Chunghwa Telecom Laboratories Full Stack Developer Summer Part Time  </span>
+          </p>
+          <p className="py-1">
+            <span className="font-bold">2023 </span>
+            <span>PDOGS Judge System (Devops) member</span>
+          </p>
+          <p className="py-1">
+            <span className="font-bold">2024 - present</span>
+            <span>NTU ArtFest Riddle City Dev</span>
+          </p>
+        <p className="py-1">
           <h1 className="font-bold">2021 - present </h1>
           <h1>Major in Information Management,</h1>
           <h1>National Taiwan University（國立臺灣大學 資訊管理學系）</h1>
         </p>
 
         <h1 className="text-2xl font-bold underline py-3 font-serif">My ❣</h1>
-        <p className="py-1">
-          I love playing guitar 🎸 and film camera 📷. Also, kitties 🐈 are the
-          best !!!!
-        </p>
 
         <h1 className="text-2xl font-bold underline py-3 font-serif">On web</h1>
         <p className="py-1 flex">

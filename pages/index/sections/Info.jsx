@@ -68,10 +68,10 @@ export default function Info() {
   }
   return (
     <div
-      className="hero min-h-screen bg-none "
+      className="hero bg-none "
       style={{ transformStyle: "preserve-3d", transform: "perspective(800px)" }}
     >
-      <div className="hero-content items-start shadow-2xl rounded-2xl ">
+      <div className="hero-content items-center shadow-2xl rounded-2xl">
         <div className="flip-card">
           <div className="flip-card-inner ">
             <div className="flip-card-front">
@@ -80,17 +80,13 @@ export default function Info() {
                 alt="Avatar"
                 className="rounded-2xl object-cover"
               />
-              <h1>( hover me ! )</h1>
             </div>
             <div className="flip-card-back text-neutral bg-base-200 w-full h-full rounded-2xl p-8">
-              <h1 className="font-bold font-serif text-4xl">Limbo</h1>
+              <h1 className="font-bold font-serif text-4xl">Goals</h1>
               <br></br>
-              <p className="text-xl">Feel more like limbo</p>
-              <p className="text-xl">Hands out my window,</p>
-              <p className="text-xl">Chasin' that sunset</p>
-              <p className="text-xl">That's more my tempo.</p>
-              <br></br>
-              <p className="self-end font-bold text-xl">-- keshi</p>
+              <p className="text-xl">1. Side Hustle</p>
+              <p className="text-xl">2. Start a startup</p>
+              <p className="text-xl">3. Keep Learning</p>
             </div>
           </div>
         </div>
@@ -112,6 +108,18 @@ export default function Info() {
             <span>PDAO 2023 System Management</span>
           </p>
           <p className="py-1">
+            <span className="font-bold">2023 </span>
+            <span>Chunghwa Telecom Laboratories Full Stack Developer Summer Part Time  </span>
+          </p>
+          <p className="py-1">
+            <span className="font-bold">2023 </span>
+            <span>PDOGS Judge System (Devops) member</span>
+          </p>
+          <p className="py-1">
+            <span className="font-bold">2024 - present</span>
+            <span>NTU ArtFest Riddle City Dev</span>
+          </p>
+          <p className="py-1">
             <span className="font-bold">2021 - present </span>
             <h1>
               <span>&nbsp;&nbsp;</span>
@@ -123,11 +131,11 @@ export default function Info() {
             </h1>
           </p>
 
-          <h1 className="text-2xl font-bold underline py-3 font-serif">My ❣</h1>
+          {/* <h1 className="text-2xl font-bold underline py-3 font-serif">My ❣</h1>
           <p className="py-1">
             I love playing guitar 🎸 and film camera 📷. Also, kitties 🐈 are
             the best !!!!
-          </p>
+          </p> */}
 
           <h1 className="text-2xl font-bold underline py-3 font-serif">
             On web

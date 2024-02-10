@@ -92,6 +92,41 @@ const tabs = [
     name: "<Projects/>",
     content: [
       {
+        title: "Event Master",
+        time: "2023",
+        repo: "https://github.com/Xin401/DBMS_project",
+        description:
+          "A Coursework done with Vite React+Fastapi+Postgres, providing a platform for event management, meeting scheduling, and group chat. Like a combined version of Google Calendar+When2meet+Slack. The project was focus on the backend and database design, providing a awesome postgres database schema design, using ER diagram, normalization, following general rules.",
+        tools: ["React", "Fastapi", "Postgres", "Vite", "Docker"],
+      },
+      {
+        title: "Jellycat Scrape App",
+        time: "2023",
+        repo: "https://github.com/YouMingYeh/jellycat-scrape-app",
+        description:
+          "A web scraping app that scrapes jellycat.com and related websites and provides a list of products with their name, price, and image. Compare and calculate the price and cost of the product in different real-time currencies. This app aims to help purchasing agents who purchase products for others. Also, it provides a awesome user interface for the user to scrape the real-time data and manage them.",
+        tools: ["Nextjs", "Sellinium", "Flask"],
+      },
+
+      {
+        title: "A Cat's Adventure",
+        time: "2023",
+        repo: "https://github.com/YouMingYeh/A-Cat-s-Adventure.git",
+        deploy: "https://yehyouming.itch.io/the-cats-adventure",
+        description: "A 2D platformer game, built with Unity, C#.",
+        tools: ["Unity", "C#"],
+      },
+
+      {
+        title: "NTU 2D Top-Down Game",
+        time: "2023",
+        repo: "Not provided",
+        deploy: "https://112-1-game-programming.github.io/Game-Build/",
+        description: "A 2D top-down game, built with Unity, C#.",
+        tools: ["Unity", "C#", "Github Pages"],
+      },
+
+      {
         title: "BUJIO",
         time: "2022",
         repo: "https://github.com/YouMingYeh/BUJIOAPP",
@@ -101,11 +136,10 @@ const tabs = [
         tools: [
           "React",
           "Redux",
-          "Node.js",
           "Express",
           "jsonwebtoken",
           "bcrypt",
-          "mongoose",
+          "MongoDB",
         ],
       },
       {
@@ -115,13 +149,7 @@ const tabs = [
         deploy: "https://pdaowebsite.gatsbyjs.io/",
         description:
           "PDAO 2023 promotional website and scoreboard, practicing parallax scrolling UI",
-        tools: ["React", "Astro", "Node.js", "RESTful API"],
-      },
-      {
-        title: "Tech Blog Platform",
-        time: "2023 - present",
-        description: "Working on...",
-        tools: ["Flask", "SEO", "..."],
+        tools: ["React", "Astro", "Node.js"],
       },
     ],
   },
@@ -165,7 +193,6 @@ const tabs = [
           "Three.js",
           "Tailwind.css",
           "Typescript",
-          "Server-Side-Rendering",
         ],
       },
       {
@@ -184,17 +211,33 @@ const tabs = [
         description: "My personal website 1.0",
         tools: ["React", "UI/UX"],
       },
+      {
+        title: "Clean Architecture good practice",
+        time: "2023",
+        repo: "https://github.com/YouMingYeh/Clean-Architecture---Birthday-Greeting-Kata.git",
+        description:
+          "A good practice of clean architecture, using the birthday greeting kata as an example",
+        tools: ["Clean Architecture", "Fastapi"],
+      },
     ],
   },
   {
     name: "<Course Works/>",
     content: [
       {
+        title: "AI article detection",
+        time: "2023",
+        repo: "https://github.com/YouMingYeh/IRTM-Final-Project-AI-Article-Detection.git",
+        description:
+          "A project that uses machine learning to classify the article into different categories. Information Retrieval and Text Mining Final Project. Reach 0.99 accuracy on the best model.",
+        tools: ["Machine Learning", "NLP", "Deep Learning"],
+      },
+      {
         title: "real time chat room",
         time: "2022",
         repo: "https://github.com/YouMingYeh/myChatRoom",
         description: "A real time chat room built with web-socket",
-        tools: ["websocket", "mongoose"],
+        tools: ["Websocket", "MongoDB"],
       },
       {
         title: "Wordle",

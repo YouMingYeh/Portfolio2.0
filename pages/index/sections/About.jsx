@@ -26,6 +26,6 @@ const hello_messages = [
   "Passionate about Full Stack Web and Software development, ",
   "so I never lose my enthusiasm 🔥🔥 for acquiring new tech-knowledge.",
   "I've created side projects 🚀, ",
-  "and continuously worked on improving and  mantaining them 💻.",
+  "and continuously worked on improving and maintaining them 💻.",
   "Check it out!!",
 ];
